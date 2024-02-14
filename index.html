@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+    <fieldset>
+      <legend>My Info</legend>
+      <div><label>first name: <input name="first_name_field" size="100" type="text"></label></div>
+      <div><label>last name: <input name="last_name_field" size="100" type="text"></label></div>
+      <div><label>phone: <input name="phone_field" size="100" type="text"></label></div>
+      <div><label>email: <input name="email_field" size="100" type="text"></label></div>
+      <div>Gender: </div>
+      <div>
+        <label>Male <input value="male" type="radio" name="gender_field"></label>
+        <label>Female <input value="female" type="radio" name="gender_field"></label>
+      </div>
+      <div>Age: </div>
+      <select name="age_field">
+        <option>under 18</option>
+        <option>over 18</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>My Availability</legend>
+      <h3>Days Available:</h3>
+      <div>
+        <div><label>Sunday <input value="Sunday" type="checkbox" name="available_field[]"></label></div>
+        <div><label>Monday <input value="Monday" type="checkbox" name="available_field[]"></label></div>
+        <div><label>Tuesday <input value="Tuesday" type="checkbox" name="available_field[]"></label></div>
+        <div><label>Wednesday <input value="Wednesday" type="checkbox" name="available_field[]"></label></div>
+        <div><label>Thursday <input value="Thursday" type="checkbox" name="available_field[]"></label></div>
+        <div><label>Friday <input value="Friday" type="checkbox" name="available_field[]"></label></div>
+        <div><label>Saturday <input value="Saturday" type="checkbox" name="available_field[]"></label></div>
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </div>
+    </fieldset>
+    <input type="hidden" name="hidden_field" value="Jack Mallett">
+    <input type="submit">
+  </form>
+</body>
+</html>
